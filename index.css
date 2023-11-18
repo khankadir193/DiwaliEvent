@@ -1,0 +1,739 @@
+body {
+  /* background-color: rebeccapurple; */
+  margin: 0;
+  padding: 0;
+  font-size: 3vw;
+  color: white;
+  background-image: url("./img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* overflow-y: hidden; */
+}
+
+/* table design */
+/* #table-container{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+td,th{
+    border: 1px solid black;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 81%;
+  position: relative;
+  left: 2rem;
+  top: 1.5rem;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ca0c0c; /* Header background color */
+  color: white;
+  height: 3vh;
+}
+td {
+  background-color: #5b0f0f;
+  color: white;
+}
+.vs {
+  width: 25%;
+}
+
+/* table design end */
+
+.header {
+  background-image: url(./img/Header.png);
+  height: 50vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.guideBtn {
+  /* width: 1vw; */
+  position: absolute;
+  z-index: 1000;
+  right: -0.5rem;
+  margin-top: 10rem;
+  background: none;
+  box-shadow: none;
+  border: none;
+  top: 2rem;
+  /* background-image: url(./img/btn/Guide-btn.png); */
+}
+
+.userTalentContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.userTalentBg {
+  background-image: url(./img/Talent\ user\ btn\ bg.png);
+  height: 10vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+}
+.activeBtnContainer {
+  display: flex;
+  /* justify-content: space-around; */
+  margin-top: -0.2rem;
+}
+.user {
+  width: 60%;
+  height: 10vh;
+  margin-left: 2.5rem;
+  background-image: url(./img/btn/User\ btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+/* .user.active {
+  width: 40%;
+  height: 10vh;
+  background-image: url(./img/btn/User\ btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+} */
+.talent {
+  width: 40%;
+  height: 10vh;
+  margin-left: 9rem;
+}
+
+.talentBtn.active {
+  width: 40%;
+  height: 10vh;
+  background-image: url(./img/btn/User\ btn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  width: 75%;
+  height: 10vh;
+  margin-left: 1rem;
+}
+.userAction {
+  display: none;
+}
+.userAction.active {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid greenyellow;
+}
+.round {
+  width: 100%;
+  height: 8vh;
+}
+.roundBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.roundBtnContainer.active {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.rewards-container {
+  background-image: url(./img/Rewards\ bg.png);
+  height: 10vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+}
+.rewards-container.active {
+  background-image: url(./img/Rewards\ bg.png);
+  height: 10vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+}
+.reward-img {
+  width: 57%;
+  height: 8vh;
+}
+#image-carousel{
+  /* width: 57%;
+  height: 8vh; */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.reward-display {
+  width: 85%;
+  height: 66vh;
+  margin: 2rem;
+}
+.reward-beans {
+  width: 45%;
+  /* height: 20vh;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 5rem; */
+}
+.beans-pot {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+.beans-text {
+  color: yellow;
+  font-size: 13px;
+  margin-left: 6rem;
+  /* margin-top: 2rem; */
+}
+.reward-dispaly-container {
+  background-image: url(./img/Rewards\ diaplay\ bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 66vh;
+  width: 83%;
+  height: 31vh;
+  /* margin-bottom: 2rem; */
+}
+.top-1{
+  font-size: 1rem;
+  position:absolute;
+  margin-left: 1.8rem;
+  margin-top: 0.4rem;
+}
+.rank-dispaly-img{
+  background-image: url(./img/rank\ display.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 6vh;
+}
+.rank-image{
+  width: 40%;
+  height: 6vh;
+}
+.reward-content {
+  position: relative;
+  bottom: 1rem;
+}
+.category-container {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* margin-top: 1rem; */
+  background-image: url(./img/Category\ btn\ bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 8vh;
+}
+.parentcategory-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.category-img1 {
+  width: 100%;
+  height: 8vh;
+  transform: scale(1.2);
+}
+.category-img {
+  width: 70%;
+  height: 8vh;
+}
+.scheduleBg-container {
+  background-image: url(./img/Schedule\ bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 95%;
+  /* height: 45vh; */
+  height: 57vh;
+}
+.tableDesign{
+  background-image: url(./img/Schedule\ table\ bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 5vh;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  color: #f4db55;
+  font-weight: bolder;
+}
+.tableDesign1{
+  background-image: url(./img/Schedule\ table\ bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 6vh;
+  margin-top: .1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  color: #f4db55;
+  /* font-weight: bolder; */
+}
+.date-mgn{
+  margin-left: .5rem;
+}
+.time-mgn{
+  margin-right: .5rem;
+}
+.avtar-img{
+  display: flex;
+  margin-top: 1.5rem;
+  width: 40%;
+  height: 7vh;
+  margin-left: 1.5rem;
+}
+.tableImg{
+  width: 93%;
+  height: 1.5rem;
+}
+.tableImg1{
+  width: 138%;
+  height: 1.5rem;
+}
+.scheduleBg-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.scheduleUser {
+  width: 30%;
+  height: 10vh;
+  position: absolute;
+  left: 3.5rem;
+  margin-top: -12px;
+}
+.scheduleUser.active{
+  width: 30%;
+  height: 10vh;
+  position: absolute;
+  left: 3.5rem;
+  margin-top: -12px;
+}
+.scheduleTalent{
+  width: 30%;
+  height: 10vh;
+  margin-left: 6rem;
+  position: absolute;
+  left: 4rem;
+  margin-top: -0.8rem;
+}
+.scheduleTalent.active{
+  width: 30%;
+  height: 10vh;
+  margin-left: 6rem;
+  position: absolute;
+  left: 4rem;
+  margin-top: -0.8rem;
+  display: block;
+}
+.talentLeaderContent{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid indianred;
+  height: 100vh;
+
+}
+/* .talentLeaderContent.active{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+} */
+.leaderUser{
+  box-shadow: none;
+  border: none;
+  background: none;
+
+}
+.leaderTalent{
+  box-shadow: none;
+  border: none;
+  background: none;
+  opacity: 0;
+}
+.userScheduleContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.userScheduleTalentBg {
+  background-image: url(./img/Talent\ user\ btn\ bg.png);
+  height: 10vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+}
+.leaderboard-container {
+  background-image: url(./img/Leaderboard\ and\ guide\ bg.png);
+  height: 130vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 85%;
+  margin-top: 1rem;
+}
+.alignLeaderBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alignLeaderBoard.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beans-txt{
+  position: absolute;
+  z-index: 100;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.leaderboar-img {
+  width: 60%;
+  height: 7vh;
+  position: relative;
+  bottom: 1rem;
+}
+.beans-amount {
+  width: 60%;
+  height: 10vh;
+  position: relative;
+  bottom: 1rem;
+}
+.flagConatainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftFlag {
+  background-image: url(./img/Top\ 2\ bg.png);
+  width: 30%;
+  height: 22vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+}
+.middleFlag {
+  background-image: url(./img/Top\ 1\ bg.png);
+  width: 30%;
+  height: 22vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.rightFlag {
+  background-image: url(./img/Top\ 3\ bg.png);
+  width: 30%;
+  height: 22vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+}
+.leaderboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+}
+.userLeaderBoadrd1 {
+  align-items: center;
+  height: 8%;
+  margin-top: 1.3rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.userLeaderBoadrd {
+  align-items: center;
+  height: 8%;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.content-container {
+  background-image: url(./img/4th\ name\ onwards\ strip.png);
+  width: 90%;
+  height: 8vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.alignLeaderBoard-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.imgUserName {
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+  margin-left: -2rem;
+  color: #f7d985;
+}
+.strip-color{
+  color: #f7d985;
+}
+.userBtn {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 0;
+  /* display: none; */
+}
+.userBtn.active {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 0;
+}
+.talentBtn {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+.talentBtn.active {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 0;
+  display: block;
+}
+.guideUserBtn {
+  width: 95%;
+  height: 7vh;
+}
+.customDialog {
+  background: transparent;
+  border: none;
+  width: 66%;
+  height: 51vh;
+  overflow: hidden;
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.guide-text {
+  font-size: 16px;
+  font-family: monospace;
+}
+.closeBtn {
+  width: 100%;
+  height: 6vh;
+  background: transparent;
+  border: none;
+  box-sizing: none;
+  margin-top: 0.3rem;
+}
+.textImgAlignment {
+  display: flex;
+  margin-right: 1rem;
+}
+.text {
+  position: relative;
+  /* top: 3rem; */
+  color: white;
+  width: 100%;
+}
+.guideBG {
+  /* background-image: url(../img/background/HTP\ Module\ BG.png);
+    width: auto;
+    height: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex; */
+  /* min-height: 500px; */
+  /* flex-direction: column; */
+  background: black;
+  border: 3px solid white;
+  border-radius: 2rem;
+}
+.left-right-arrow {
+  /* width: 10%; */
+  height: 5vh;
+}
+.left-right-arrow-container {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  justify-content: center;
+  position: relative;
+  top: -6rem;
+}
+
+/* getting data from xlsx file */
+
+#table-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  width: 98%;
+  height: 60vh;
+}
+
+table {
+  /* border: 1px solid black; */
+  /* border-collapse: collapse; */
+  /* border-spacing:0 15px;
+    width: 100%; */
+}
+
+.crousal-img {
+  width: 100%;
+  height: 16vh;
+  /* position: absolute; */
+  /* z-index: 100; */
+
+}
+
+#carousel-container {
+    width: 28vw;
+    overflow: hidden;
+    margin: auto;
+    /* margin-top: 2rem; */
+}
+.img-text-container{
+    /* display: flex; */
+    justify-content: center;
+
+}
+
+/* td,
+th {
+  width:150px;
+  text-align:center;
+  border:1px solid black;
+  padding:5px;
+} */
+
+/* th {
+    background-color:green;
+    Color:white;
+} */
+/* 
+tr.spaced-row {
+  border-spacing: 40px; 
+} */
+
+
+
+
+/* dance , singing and fashion battle desing css tab switching... */
+
+.danceBtn {
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+}
+
+
+/* .danceBtn.active{
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+} */
+
+.singingBtn{
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 7.5rem;
+  opacity: 0;
+}
+
+/* .singingBtn.active{
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 7.5rem;
+  display: block;
+  opacity: 1;
+} */
+
+.fashionBtn{
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 2rem;
+  /* display: none; */
+  opacity: 0;
+}
+
+/* .fashionBtn.active{
+  box-shadow: none;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 2rem;
+  display: block;
+} */
+
+
+
+.singingBattle{
+  display: none;
+}
+
+.fashionBattle{
+  display: none;
+}
+
+/* SINGING BUTTON AND DANCE BUTTONS CSS HAS TO BE IMPLEMENTED.... */

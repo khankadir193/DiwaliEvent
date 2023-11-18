@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pk Diwali Events</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <dialog id="customDialog" class="customDialog">
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <div class="guideBG">
+            <ul style="margin-left: -1.5rem">
+              <li class="textImgAlignment">
+                <span class="text"
+                  >Top 28 Talents have to register their ids with SK employees
+                  to participate this event</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >PK battle will be held on Ganesh Chaturthi Festival
+                  season</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >tralents need to wear traditional outfit for PK battle.</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >There will be 10 min Official PK match will be
+                  Scheduled.talents need to come live before 15 min of PK
+                  battle.</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >Top 16 talent that earns maximum beans will be qualified for
+                  the 2nd round i.e Final</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >Talents will be ranked on the leader board according to the
+                  number of gems they receive in each round.</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >Users will be ranked according to their spending on each
+                  round of the tournament.</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >The winner of this tournament will be decided based on the
+                  gems they receive in the Final Round.</span
+                >
+              </li>
+
+              <li class="textImgAlignment">
+                <span class="text"
+                  >The maximum spender will be the winner of the
+                  tournament.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- <p class="guide-text">
+          Ulajh Karke teri julfon main aabad ho jao ki jaise lucknow ka mai
+          amina baad ho jao. mai jamuna ki trah tanha niharu taaj ko kab tak koi
+          ganga mile tou mai allahbad baad ho jao.
+        </p> -->
+
+          <button
+            autofocus
+            style="
+              box-shadow: none;
+              outline: none;
+              border: none;
+              background: transparent;
+            "
+          >
+            <img class="closeBtn" src="./img/btn/cross.png" />
+          </button>
+        </div>
+      </dialog>
+
+      <button class="guideBtn" id="showDialogButton">
+        <img class="guideUserBtn" src="./img/btn/Guide-btn.png" />
+      </button>
+    </header>
+
+    <main>
+      <!-- user talent design for header -->
+      <div class="userTalentContainer">
+        <div class="userTalentBg">
+          <div class="activeBtnContainer">
+            <button class="userBtn tab1 active">
+              <img class="user" src="./img/btn/User btn.png" />
+            </button>
+            <button class="talentBtn tab1">
+              <img class="talent" src="./img/btn/Talent btn.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is the talent content -->
+      <div class="userAction talentContent">
+        <h1 class="shayri">this is the talent view</h1>
+      </div>
+
+      <!-- round button for header -->
+      <div class="roundBtnContainer talentContent">
+        <div>
+          <img class="round" src="./img/btn/Round 1 select btn.png" />
+        </div>
+        <div>
+          <img class="round" src="./img/Round 2 unselect btn.png" />
+        </div>
+      </div>
+
+      <!-- rewards design -->
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div class="rewards-container talentContent">
+          <img class="reward-img" src="./img/tag/Rewards tag.png" />
+
+          <div class="reward-dispaly-container">
+            <!-- rank display image -->
+            <div style="display: flex; justify-content: center; align-items: center; position: relative; bottom: .5rem;">
+            <div class="rank-dispaly-img">
+              <span class="top-1">Top 1</span>
+            </div></div>
+            <!-- <img class="rank-image" src="./img/rank display.png" /> -->
+            <div class="img-text-container">
+              <div id="carousel-container">
+                <div id="image-carousel">
+                  <img class="crousal-img" src="./img/Rewards/Beans Pot.png" />
+                  <img
+                    class="crousal-img"
+                    src="./img/Rewards/Amazon gift card.png"
+                  />
+                  <img
+                    class="crousal-img"
+                    src="./img/Rewards/Celebration theme.png"
+                  />
+                  <img
+                    class="crousal-img"
+                    src="./img/Rewards/Pk superstar badge.png"
+                  />
+                </div>
+              </div>
+
+              <!-- <div class="beans-pot"> -->
+              <h1 class="beans-text">Beans Pot</h1>
+              <!-- </div> -->
+            </div>
+
+            <!-- left right image -->
+            <div class="left-right-arrow-container">
+              <button
+                style="border: none; box-shadow: none; background: none"
+                id="prevBtn"
+                onclick="prevImage()"
+              >
+                <img class="left-right-arrow" src="./img/btn/LeftArrow.png" />
+              </button>
+              <button
+                style="border: none; box-shadow: none; background: none"
+                id="nextBtn"
+                onclick="nextImage()"
+              >
+                <img class="left-right-arrow" src="./img/btn/RightArrow.png" />
+              </button>
+            </div>
+          </div>
+
+          <!-- reward content -->
+          <div class="reward-content">
+            <p>User receives total number 25% of total beans Pot</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- round1 && round2 button for schedule -->
+      <div class="roundBtnContainer">
+        <div>
+          <img class="round" src="./img/btn/Round 1 select btn.png" />
+        </div>
+        <div>
+          <img class="round" src="./img/Round 2 unselect btn.png" />
+        </div>
+      </div>
+
+      <!-- Dance battle event page -->
+      <div class="parentcategory-container">
+        <div class="category-container">
+          <div style="display: flex">
+            <button class="danceBtn tab2 active">
+              <img
+                class="category-img1"
+                src="./img/btn/Dance btn.png"
+                alt="Category"
+              />
+            </button>
+            <button
+              class="singingBtn tab2"
+              id="myButton"
+            >
+              <img
+                class="category-img1"
+                src="./img/btn/Singing battle btn.png"
+                alt="Category"
+              />
+            </button>
+            <button class="fashionBtn tab2">
+              <img
+                class="category-img1"
+                src="./img/btn/fashion battle btn.png"
+                alt="Category"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="singingBattle singing-fashion-content">
+        <h1 class="shayri">this is the singing battle</h1>
+      </div>
+
+      <div class="fashionBattle singing-fashion-content">
+        <h1 class="shayri">this is the fashion battle</h1>
+      </div>
+
+      <!-- table container it has to be come from xlsx file -->
+      <div class="scheduleBg-parent-container singing-fashion-content">
+        <div class="scheduleBg-container">
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            <div class="tableDesign">
+              <span >Date</span>
+              <span>Player1</span>
+              <span><img class="tableImg" src="./img/Vs.png" alt=""></span>
+              <span>Plaryer2</span>
+              <span>Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+            <div class="tableDesign1">
+              <span class="date-mgn">Date</span>
+              <span>TalentName ID:000000</span>
+              <span><img class="tableImg1" src="./img/Vs.png" alt=""></span>
+              <span>TalentName ID:000000</span>
+              <span class="time-mgn">Time</span>
+            </div>
+          </div>
+          <!-- <div id="table-container"></div> -->
+        </div>
+      </div>
+
+      <!-- user-talent schedule button for leaderboard -->
+      <div class="userScheduleContainer">
+        <div class="userScheduleTalentBg">
+          <div class="activeBtnScheduleContainer">
+            <button class="leaderUser tab3 active">
+              <img class="scheduleUser" src="./img/btn/User btn.png" />
+            </button>
+            <button class="leaderTalent tab3">
+              <img class="scheduleTalent" src="./img/btn/Talent btn.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- content for talent button leader board -->
+      <div class="talentLeaderContent leaderContent">
+        <h1 class="shayri">this is the talent view for leader view</h1>
+      </div>
+
+      <!-- round1 && round2 button for leaderboard -->
+      <div class="roundBtnContainer leaderContent">
+        <div>
+          <img class="round" src="./img/btn/Round 1 select btn.png" />
+        </div>
+        <div>
+          <img class="round" src="./img/btn/Round 2 select btn.png" />
+        </div>
+      </div>
+
+      <!-- leader board design -->
+      <div class="alignLeaderBoard leaderContent">
+        <div class="leaderboard-container">
+          <div class="alignLeaderBoard">
+            <img class="leaderboar-img" src="./img/tag/Leaderboard tag.png" />
+          </div>
+
+          <div class="alignLeaderBoard">
+            <img class="beans-amount" src="./img/Beans pot amount.png" />
+            <span class="beans-txt">000,000,00</span>
+          </div>
+
+          <!-- avtar images -->
+          <div>
+            <div class="flagConatainer">
+              <div class="leftFlag">
+                <img class="avtar-img" src="./img/default-avtar.png" />
+                <div class="leaderboard-content">
+                  <span>Name:</span>
+                  <span>ID</span>
+                  <span>000,000,00</span>
+                </div>
+              </div>
+              <div class="middleFlag">
+                <img class="avtar-img" src="./img/default-avtar.png" />
+                <div class="leaderboard-content">
+                  <span>Name:</span>
+                  <span>ID</span>
+                  <span>000,000,00</span>
+                </div>
+              </div>
+              <div class="rightFlag">
+                <img class="avtar-img" src="./img/default-avtar.png" />
+                <div class="leaderboard-content">
+                  <span>Name:</span>
+                  <span>ID</span>
+                  <span>000,000,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- first strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>4</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- second strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>5</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- third strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>6</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>7</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- five strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>8</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- six strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>9</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- seven strip content -->
+          <div class="alignLeaderBoard-content">
+            <div class="content-container">
+              <div class="userLeaderBoadrd1">
+                <div class="imgUserName">
+                  <h4>10</h4>
+                  <img style="width: 20%; height: 6vh" src="img/default-avtar.png" />
+                  <h4>Name ID</h4>
+                </div>
+                <div class="strip-color">
+                  <h4>000,000,00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end leaderboard container -->
+      </div>
+      <!-- end leaderboard aligner -->
+
+      <div style="display: flex; justify-content: center; color: #ffbc63">
+        <h3>All rights reserved to StreamKar</h3>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
